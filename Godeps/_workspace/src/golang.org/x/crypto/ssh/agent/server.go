@@ -12,7 +12,7 @@ import (
 	"log"
 	"math/big"
 
-	"github.com/fheng/scm-go/Godeps/_workspace/src/golang.org/x/crypto/ssh"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/golang.org/x/crypto/ssh"
 )
 
 // Server wraps an Agent and uses it to implement the agent side of

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/stretchr/testify/assert"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/stretchr/testify/assert"
 )
 
 func TestEntryPanicln(t *testing.T) {

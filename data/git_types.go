@@ -1,6 +1,6 @@
 package data
 
-import "github.com/fheng/scm-go/Godeps/_workspace/src/gopkg.in/libgit2/git2go.v23"
+import "github.com/maleck13/scm-go/Godeps/_workspace/src/gopkg.in/libgit2/git2go.v23"
 
 //used to marshal the response from listing tags and branches
 type BranchesAndTags struct {

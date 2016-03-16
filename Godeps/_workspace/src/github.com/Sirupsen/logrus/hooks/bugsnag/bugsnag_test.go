@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/bugsnag/bugsnag-go"
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/Sirupsen/logrus"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/Sirupsen/logrus"
 )
 
 type notice struct {

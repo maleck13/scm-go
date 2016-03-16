@@ -19,10 +19,10 @@ import (
 	"io"
 	"sort"
 
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/golang/protobuf/proto"
-	dto "github.com/fheng/scm-go/Godeps/_workspace/src/github.com/prometheus/client_model/go"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/golang/protobuf/proto"
+	dto "github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/prometheus/client_model/go"
 
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/prometheus/common/model"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/prometheus/common/model"
 )
 
 type json2Decoder struct {

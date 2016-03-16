@@ -2,8 +2,8 @@ package config_test
 
 import (
 	"encoding/json"
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/stretchr/testify/assert"
-	"github.com/fheng/scm-go/config"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/config"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/stretchr/testify/assert"
 	"log"
 	"testing"
 )

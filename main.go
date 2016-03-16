@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/fheng/scm-go/config"
-	"github.com/fheng/scm-go/logger"
-	"github.com/fheng/scm-go/routes"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/config"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/logger"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/routes"
 )
 
 func main() {

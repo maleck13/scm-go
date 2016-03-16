@@ -2,7 +2,7 @@ package logrus_syslog
 
 import (
 	"fmt"
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/Sirupsen/logrus"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/Sirupsen/logrus"
 	"log/syslog"
 	"os"
 )

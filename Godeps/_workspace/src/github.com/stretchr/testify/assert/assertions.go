@@ -14,8 +14,8 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/davecgh/go-spew/spew"
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/pmezard/go-difflib/difflib"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/davecgh/go-spew/spew"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/pmezard/go-difflib/difflib"
 )
 
 // TestingT is an interface wrapper around *testing.T

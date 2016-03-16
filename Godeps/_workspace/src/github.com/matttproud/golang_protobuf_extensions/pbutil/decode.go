@@ -19,7 +19,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/golang/protobuf/proto"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/golang/protobuf/proto"
 )
 
 var errInvalidVarint = errors.New("invalid varint32 encountered")

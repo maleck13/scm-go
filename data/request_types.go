@@ -3,7 +3,7 @@ package data
 import (
 	"errors"
 	"fmt"
-	"github.com/fheng/scm-go/Godeps/_workspace/src/gopkg.in/libgit2/git2go.v23"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/gopkg.in/libgit2/git2go.v23"
 	"net/url"
 	"strings"
 )

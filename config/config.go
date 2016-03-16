@@ -2,7 +2,7 @@ package config
 
 import (
 	"encoding/json"
-	"github.com/fheng/scm-go/data"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/data"
 	"io/ioutil"
 	"log"
 	"os"

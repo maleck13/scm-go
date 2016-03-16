@@ -7,9 +7,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/golang/protobuf/proto"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/golang/protobuf/proto"
 
-	dto "github.com/fheng/scm-go/Godeps/_workspace/src/github.com/prometheus/client_model/go"
+	dto "github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/prometheus/client_model/go"
 )
 
 var (

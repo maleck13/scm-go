@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 
 	"fmt"
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/Sirupsen/logrus"
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/codegangsta/negroni"
-	"github.com/fheng/scm-go/data"
-	"github.com/fheng/scm-go/services"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/Sirupsen/logrus"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/codegangsta/negroni"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/data"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/services"
 )
 
 func AllRoutesMiddleware(log *logrus.Logger) *negroni.Negroni {

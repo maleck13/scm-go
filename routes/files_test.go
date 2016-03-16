@@ -3,9 +3,9 @@ package routes_test
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/stretchr/testify/assert"
-	"github.com/fheng/scm-go/config"
-	"github.com/fheng/scm-go/test"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/config"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/test"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/stretchr/testify/assert"
 	"io/ioutil"
 	"net/http"
 	"os"

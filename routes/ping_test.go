@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/stretchr/testify/assert"
-	"github.com/fheng/scm-go/test"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/test"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/stretchr/testify/assert"
 )
 
 func TestPingOk(t *testing.T) {

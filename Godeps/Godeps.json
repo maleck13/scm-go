@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/fheng/scm-go",
+	"ImportPath": "github.com/maleck13/scm-go",
 	"GoVersion": "go1.6",
 	"Packages": [
 		"./..."
@@ -22,6 +22,30 @@
 		{
 			"ImportPath": "github.com/davecgh/go-spew/spew",
 			"Rev": "5215b55f46b2b919f50a1df0eaa5886afe4e3b3d"
+		},
+		{
+			"ImportPath": "github.com/fheng/scm-go/config",
+			"Rev": "8aa3c836c07f858da3e09c1475a90e12f91c9cb2"
+		},
+		{
+			"ImportPath": "github.com/fheng/scm-go/data",
+			"Rev": "8aa3c836c07f858da3e09c1475a90e12f91c9cb2"
+		},
+		{
+			"ImportPath": "github.com/fheng/scm-go/logger",
+			"Rev": "8aa3c836c07f858da3e09c1475a90e12f91c9cb2"
+		},
+		{
+			"ImportPath": "github.com/fheng/scm-go/routes",
+			"Rev": "8aa3c836c07f858da3e09c1475a90e12f91c9cb2"
+		},
+		{
+			"ImportPath": "github.com/fheng/scm-go/services",
+			"Rev": "8aa3c836c07f858da3e09c1475a90e12f91c9cb2"
+		},
+		{
+			"ImportPath": "github.com/fheng/scm-go/test",
+			"Rev": "8aa3c836c07f858da3e09c1475a90e12f91c9cb2"
 		},
 		{
 			"ImportPath": "github.com/golang/protobuf/proto",

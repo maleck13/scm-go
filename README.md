@@ -22,32 +22,6 @@ api:
   * use('/fhgithub/check_commit', this.check_commit_handler). done
   * use('/sys', this.sys_handler). ping/health done
 
-##Rational
-
-* fh-scm is a very old component that is in need of re writing. In many places it uses synchronous code where is should use async code.
-* The tests are quite poor. The git integration is not really tested. 
-* We shell out to bash scripts without really checking the input ( we wont have any bash scripts in the new version)
-* We use the global git binaray for executing concurrent requests
-
-
-##Things improved by this rewrite
-
-* no longer shelling out to bash passing arbitrary strings
-* no longer copy the repo to a back up dir (should we do this? seems a bit pointless)
-* no longer spawn a full new process for each git command (30MB at least for each new process as each new one needs a v8 instance) often these new processes were just reading files
-* massively increase integration testing
-* code documented and easier to maintain 
-* Remove private keys after use (would prefer for scm to manage these keys)
-* Add metrics and instrumentation via prometheus 
-
-##Still to do
-* set up fhcap to deploy it
-* add component to component authentication (currently scm has none)
-* Dont save public private keys on disk. At the very least remove them after each operation
-* Add actual restful apis such as /clone /push 
-* Open source it
-* look at implementing mirror for openshift2. We could create a bare repo. clone the remote. add os2 repo as a remote and push the current branch to it
-
 ##Local Development
 
 ### set up golang
@@ -65,9 +39,9 @@ export GOPATH=/mnt/src/go
 
 ###setup scm-go
 ```bash
-mkdir -p $GOPATH/src/github.com/fheng
-cd $GOPATH/src/github.com/fheng
-git clone git@github.com:fheng/scm-go.git
+mkdir -p $GOPATH/src/github.com/maleck13
+cd $GOPATH/src/github.com/maleck13
+git clone git@github.com:maleck13/scm-go.git
 
 #install godeps (manages dependency versions)
 go get github.com/tools/godep
@@ -85,7 +59,7 @@ brew install libssh2
 brew install cmake
 
 #install libgit2 on the mac. Useful for when running tests in intellij
-cd $GOPATH/src/github.com/fheng/scm-go
+cd $GOPATH/src/github.com/maleck13/scm-go
 ./scripts/build-libgit2-dynamic.sh
 ```
 
@@ -94,8 +68,8 @@ cd $GOPATH/src/github.com/fheng/scm-go
 ```
 sudo apt-get install cmake
 sudo apt-get install libssh2-1-dev
-export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/mnt/src/go/src/github.com/fheng/scm-go/vendor/libgit2/build/
-cd $GOPATH/src/github.com/fheng/scm-go
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/mnt/src/go/src/github.com/maleck13/scm-go/vendor/libgit2/build/
+cd $GOPATH/src/github.com/maleck13/scm-go
 ./scripts/build-libgit2-dynamic.sh
 
 ```

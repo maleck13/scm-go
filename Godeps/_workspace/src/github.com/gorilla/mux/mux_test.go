@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/gorilla/context"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/gorilla/context"
 )
 
 func (r *Route) GoString() string {

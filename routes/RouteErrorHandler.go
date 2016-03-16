@@ -6,9 +6,9 @@ import (
 	"net/url"
 	"runtime/debug"
 
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/Sirupsen/logrus"
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/gorilla/mux"
-	"github.com/fheng/scm-go/data"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/Sirupsen/logrus"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/data"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/gorilla/mux"
 )
 
 func HandleRouteError(route *url.URL, wr http.ResponseWriter, err *data.ErrorJSON, logger *logrus.Logger) {

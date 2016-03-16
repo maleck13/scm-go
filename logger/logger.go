@@ -3,8 +3,8 @@ package logger
 import (
 	"os"
 
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/Sirupsen/logrus"
-	"github.com/fheng/scm-go/config"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/Sirupsen/logrus"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/config"
 )
 
 //TODO write to file and stdout

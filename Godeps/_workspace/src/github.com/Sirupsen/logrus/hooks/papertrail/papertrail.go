@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/Sirupsen/logrus"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/Sirupsen/logrus"
 )
 
 const (

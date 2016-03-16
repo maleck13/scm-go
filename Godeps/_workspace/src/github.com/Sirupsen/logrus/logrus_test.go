@@ -8,7 +8,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/stretchr/testify/assert"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/stretchr/testify/assert"
 )
 
 func LogAndAssertJSON(t *testing.T, log func(*Logger), assertions func(fields Fields)) {

@@ -12,12 +12,12 @@ import (
 	"runtime/debug"
 	"strconv"
 
-	"github.com/fheng/scm-go/Godeps/_workspace/src/gopkg.in/libgit2/git2go.v23"
-	"github.com/fheng/scm-go/config"
-	"github.com/fheng/scm-go/data"
-	"github.com/fheng/scm-go/logger"
-	"github.com/fheng/scm-go/routes"
-	"github.com/fheng/scm-go/services"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/config"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/data"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/logger"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/routes"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/services"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/gopkg.in/libgit2/git2go.v23"
 )
 
 func init() {

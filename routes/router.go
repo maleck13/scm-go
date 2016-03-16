@@ -3,10 +3,10 @@ package routes
 import (
 	"net/http"
 
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/Sirupsen/logrus"
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/gorilla/mux"
-	"github.com/fheng/scm-go/Godeps/_workspace/src/github.com/prometheus/client_golang/prometheus"
-	"github.com/fheng/scm-go/config"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/Sirupsen/logrus"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/config"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/gorilla/mux"
+	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/prometheus/client_golang/prometheus"
 )
 
 func SetUpRoutes(logger *logrus.Logger, config *config.Config) *mux.Router {
