@@ -1,0 +1,72 @@
+{
+  "githubtrigger": {
+    "port": 8801,
+    "connect": {
+      "level": "log4js.levels.INFO"
+    },
+    "ssl": {
+      "use_ssl": false,
+      "privateKey":"",
+      "publicCert":""
+    }
+  },
+
+  "fileserver": {
+    "path": "/tmp/fh-scm/",
+    "backup": "/tmp/fh-scm/backup"
+  },
+
+  "logger": [
+    {
+      "type": "winston.transports.File",
+      "filename": "/tmp/fh-scm.log",
+      "json": false,
+      "level": "debug",
+      "handleExceptions": true
+    },
+    {
+      "type": "winston.transports.Console",
+      "json": false,
+      "level": "debug",
+      "colorize": true
+    }
+  ],
+
+  "gitcommands": {
+    "get":        "git clone --branch 'BRANCH_NAME' 'REPO_URL' .",
+    "update":     "git pull && git pull --tags",
+    "add":        "git add 'FILE_NAME'",
+    "commit":     "git commit 'FILE_NAME' -m\"COMMIT_MESSAGE\"",
+    "push":       "git push 'REPO_URL' 'BRANCH_NAME' --porcelain",
+    "push_remote": "git push REPO_URL BRANCH_NAME",
+    "clone_mirror":"git clone --mirror REPO_URL .",
+    "fetch":      "git fetch -p origin",
+    "push_mirror": "git push --mirror REPO_URL",
+    "reset":      "git reset --hard HEAD^",
+    "tag":        "git tag 'TAG_NAME' && git push --tags",
+    "list_remote":  "git ls-remote --heads --tags origin",
+    "sshWrapper": "fh-scm-ssh-internal",
+    "commithash": "git rev-parse --verify HEAD",
+    "archive": "git archive --format=zip -o 'OUTPUT_FILE' REF_VALUE FILE_PATHS",
+    "check_file": "git cat-file -e \"REF_VALUE:FILE_PATH\"",
+    "list_files": "git ls-tree --name-only -r --full-name REF_VALUE",
+    "check_commit": "git rev-parse \"COMMIT_VALUE^{commit}\"",
+    "checkout": "git checkout 'BRANCH_NAME'"
+  },
+
+  "gitcommandretries": {
+    "get" : 1,
+    "update" : 2,
+    "push" : 2
+  },
+
+  "gitcommandtimeout" : 240000,
+  "gitcommandmaxbuffer" : 1000000,
+  "gitpullbeforepush" : false,
+
+  "millicore": {
+    "api_bump_version": "https://CLUSTER_HOST/box/srv/1.1/pub/app/APP_GUID/bump",
+    "url": "https://localhost",
+    "enabled":false
+  }
+}
