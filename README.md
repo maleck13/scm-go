@@ -138,42 +138,4 @@ godep save -r ./...   ensures deps are from the godep saved dependencies
 ```
 
 
-##Debugger
-
-Intellij supports the dlv debugger. Just add break points and run with debugger. 
-
-##Why golang
-
-###Compiled
-Compiled languages are good. They are generally faster, safer, they naturally catch a lot of what we unit test and lint for. The golang compiler
-is very strict. It will not allow unused imports, unused vars type errors and much more. The go language compiles very quickly. Much faster than java, it reduces the overhead of a compiled language to almost 0.
-you can simply run go run main.go to run it locally.
-
-###Refactoring
-
-//todo
-
-###Asynchronous io
-golang uses exactly the same underlying system calls as node for all network io (most of our io is network io). [Epoll](https://en.wikipedia.org/wiki/Epoll) and [kqueue](https://en.wikipedia.org/wiki/Kqueue). It is is just as asynchronous as node, except you avoid callbacks and can write your code in a sychronus  
-form. Underneath golang uses very light weight go routines approx 2kB it then uses the go runtime scheduler to hide the intricacies of returning control to your function once the io is complete.
-
-
-###Go Tools
-
-Standard test tools ```go test```. Standard formatting ```go fmt``` . Race condition checking ``` go build -race ```. Built in documentation tool ```godoc```
- and much more.
- 
-###Always use the latest version.
- go builds an executable binary and packages the runtime in it. This means you can always use the latest version of go. Moving versions is up to us as engineers not whoever has to take on updating the runtime across all our servers.
-
-
-### The standard lib
-
-go compiles to machine code and is compiled by a compiler written in go. This means you can click on a function in go and be brought straight to the go regular go code and see how it was written.
-This is extremely powerful. being able to easily see how the others of the language implemented the core of the language is really excellent.
-
-### Simplicity
-//todo javascript is not simple one of the main goals of golang is simplicity and a lack of magic
-[good article for why golang will succeed](https://texlution.com/post/why-go-is-doomed-to-succeed/)
-
 
