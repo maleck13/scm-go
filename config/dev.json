@@ -15,23 +15,13 @@
     "path": "/tmp/fh-scm/",
     "backup": "/tmp/fh-scm/backup"
   },
-
-  "logger": [
-    {
-      "type": "winston.transports.File",
-      "filename": "/tmp/fh-scm.log",
-      "json": false,
-      "level": "debug",
-      "handleExceptions": true
-    },
-    {
-      "type": "winston.transports.Console",
-      "json": false,
-      "level": "debug",
-      "colorize": true
-    }
-  ],
-
+  "logger": {
+    "name": "scm",
+    "streams": [{
+      "stream": "fh-scm.log",
+      "level": "debug"
+    }]
+  },
   "gitcommands": {
     "get":        "git clone --branch 'BRANCH_NAME' 'REPO_URL' .",
     "update":     "git pull && git pull --tags",
