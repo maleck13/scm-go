@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/test"
+	"github.com/maleck13/scm-go/test"
 )
 
 func TestHealth(t *testing.T) {

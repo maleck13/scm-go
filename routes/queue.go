@@ -3,8 +3,8 @@ package routes
 import (
 	"sync"
 
-	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/data"
-	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/logger"
+	"github.com/maleck13/scm-go/data"
+	"github.com/maleck13/scm-go/logger"
 )
 
 //this is a shared lock on repo actions so that only one destructive action can happen at a time on a given repo

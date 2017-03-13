@@ -4,8 +4,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/data"
-	"github.com/maleck13/scm-go/Godeps/_workspace/src/gopkg.in/libgit2/git2go.v23"
+	"github.com/maleck13/scm-go/data"
+	"gopkg.in/libgit2/git2go.v23"
 )
 
 //todo this should be split out into two functions listTags and listBranches

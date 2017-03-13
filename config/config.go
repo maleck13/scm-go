@@ -2,7 +2,7 @@ package config
 
 import (
 	"encoding/json"
-	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/data"
+	"github.com/maleck13/scm-go/data"
 	"io/ioutil"
 	"log"
 	"os"
@@ -11,12 +11,12 @@ import (
 //This marshals the json config file into a useful type structure to use throughout the application
 
 type Stream struct {
-	Level  string `json:"level"`
-	Stream string `json:"stream"`
+	Level    string `json:"level"`
+	Stream   string `json:"stream"`
 }
 
 type Logger struct {
-	Name    string
+	Name string
 	Streams []Stream `json:"streams"`
 }
 

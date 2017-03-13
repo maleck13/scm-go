@@ -3,11 +3,11 @@ package services_test
 import (
 	"testing"
 
-	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/config"
-	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/services"
-	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/test"
-	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/stretchr/testify/assert"
-	"github.com/maleck13/scm-go/Godeps/_workspace/src/gopkg.in/libgit2/git2go.v23"
+	"github.com/maleck13/scm-go/config"
+	"github.com/maleck13/scm-go/services"
+	"github.com/maleck13/scm-go/test"
+	"github.com/stretchr/testify/assert"
+	"gopkg.in/libgit2/git2go.v23"
 )
 
 func TestListBranches(t *testing.T) {

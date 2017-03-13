@@ -2,9 +2,9 @@ package services
 
 import (
 	"fmt"
-	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/data"
-	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/fheng/scm-go/logger"
-	"github.com/maleck13/scm-go/Godeps/_workspace/src/gopkg.in/libgit2/git2go.v23"
+	"github.com/maleck13/scm-go/data"
+	"github.com/maleck13/scm-go/logger"
+	"gopkg.in/libgit2/git2go.v23"
 )
 
 //Clones the repo into the specified directory. A set of clone options are created. These clone options are what does a lot of the work. They take the path to the key pair
