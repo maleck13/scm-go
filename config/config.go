@@ -10,9 +10,14 @@ import (
 
 //This marshals the json config file into a useful type structure to use throughout the application
 
+type Stream struct {
+	Level  string `json:"level"`
+	Stream string `json:"stream"`
+}
+
 type Logger struct {
-	Level    string `json:"level"`
-	Filename string `json:"filename"`
+	Name    string
+	Streams []Stream `json:"streams"`
 }
 
 type Connect struct {
@@ -46,7 +51,7 @@ type Config struct {
 	Ssl           SSL           `json:"ssl"`
 	Fileserver    FileServer    `json:"fileserver"`
 	Millicore     Millicore     `json:"millicore"`
-	Logger        []Logger      `json:"logger"`
+	Logger        Logger        `json:"logger"`
 }
 
 func (c Config) GetRepoPath(repoName string) string {

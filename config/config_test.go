@@ -21,6 +21,14 @@ func Test_Marshal_Config(t *testing.T) {
 			"privateKey":"",
 			"publicCert":""
 		},
+		"logger": {
+			"name": "scm",
+			"streams": [{
+
+				"stream": "process.stdout",
+				"level": "debug"
+			}]
+		},
 		"fileserver": {
     		"path": "/tmp/fh-scm",
     		"backup": "/tmp/fh-scm/backup"
@@ -50,6 +58,6 @@ func Test_NewConfig(t *testing.T) {
 	}
 	assert.Equal(t, "/tmp/fh-scm/test", conf.GetRepoPath("test"), "expected repo name to be correct")
 	assert.Equal(t, 8801, conf.Githubtrigger.Port, " port should be 8801")
-	assert.Equal(t, "debug", conf.Logger[0].Level, " level should debug")
+	assert.Equal(t, "debug", conf.Logger.Streams[0].Level, " level should debug")
 
 }
