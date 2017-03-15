@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/Sirupsen/logrus"
-	"github.com/maleck13/scm-go/Godeps/_workspace/src/github.com/codegangsta/negroni"
+	"github.com/Sirupsen/logrus"
+	"github.com/codegangsta/negroni"
 )
 
 type HttpLogger struct {

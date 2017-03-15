@@ -2,7 +2,7 @@
 
 if [ "" != "$1" ] 
   then
-   rm -rf ./vendor/libgit2/build
+   rm -rf ./cdeps/libgit2/build
 fi   
 
 ./scripts/build-libgit2-static.sh

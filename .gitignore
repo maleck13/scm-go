@@ -1,3 +1,5 @@
 .idea/
 coverage.xml
 scm-go
+vendor/*
+!vendor/.gitkeep

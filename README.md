@@ -22,7 +22,7 @@ api:
   * use('/fhgithub/check_commit', this.check_commit_handler). done
   * use('/sys', this.sys_handler). ping/health done
 
-##Local Development
+## Local Development
 
 ### set up golang
 
@@ -37,17 +37,18 @@ export PATH=$PATH:$GOROOT/bin:/usr/local/go/bin
 export GOPATH=/mnt/src/go
 ```
 
-###setup scm-go
+### setup scm-go
 ```bash
 mkdir -p $GOPATH/src/github.com/maleck13
 cd $GOPATH/src/github.com/maleck13
 git clone git@github.com:maleck13/scm-go.git
 
-#install godeps (manages dependency versions)
-go get github.com/tools/godep
+#install glide package manager: https://github.com/Masterminds/glide#install
+#install dependencies
+glide install
 ``` 
 
-###libgit2
+### libgit2
 
 For local dev I recommend installing libgit2 for dynamic linking [https://libgit2.github.com/](github)
 Mac osx I had to brew unlink libgit2 as it was an older version.
@@ -127,7 +128,7 @@ Get more verbose output
 go test -v services/git_test.go 
 ```
 
-#Adding new code
+# Adding new code
 
 write your code. Write your tests. Then pre commit Run
 

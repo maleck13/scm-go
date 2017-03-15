@@ -1,0 +1,59 @@
+hash: 7a2d3a3a2684e6602f808f3e014554384621e3a2b2664b1620e61707095e693e
+updated: 2017-03-14T22:03:12.444580375Z
+imports:
+- name: github.com/beorn7/perks
+  version: b965b613227fddccbfffe13eae360ed3fa822f8d
+  subpackages:
+  - quantile
+- name: github.com/codegangsta/negroni
+  version: c7477ad8e330bef55bf1ebe300cf8aa67c492d1b
+- name: github.com/davecgh/go-spew
+  version: 5215b55f46b2b919f50a1df0eaa5886afe4e3b3d
+  subpackages:
+  - spew
+- name: github.com/golang/protobuf
+  version: 68415e7123da32b07eab49c96d2c4d6158360e9b
+  subpackages:
+  - proto
+- name: github.com/gorilla/context
+  version: 1c83b3eabd45b6d76072b66b746c20815fb2872d
+- name: github.com/gorilla/mux
+  version: 48e889f422c9702f924e53b095546239a1253159
+- name: github.com/matttproud/golang_protobuf_extensions
+  version: d0c3fe89de86839aecf2e0579c40ba3bb336a453
+  subpackages:
+  - pbutil
+- name: github.com/pmezard/go-difflib
+  version: d8ed2627bdf02c080bf22230dbb337003b7aba2d
+  subpackages:
+  - difflib
+- name: github.com/prometheus/client_golang
+  version: 67994f177195311c3ea3d4407ed0175e34a4256f
+  subpackages:
+  - prometheus
+- name: github.com/prometheus/client_model
+  version: fa8ad6fec33561be4280a8f0514318c79d7f6cb6
+  subpackages:
+  - go
+- name: github.com/prometheus/common
+  version: 812a28da713128def9aad06a32fbcdb7685d13f4
+  subpackages:
+  - expfmt
+  - internal/bitbucket.org/ww/goautoneg
+  - model
+- name: github.com/prometheus/procfs
+  version: 406e5b7bfd8201a36e2bb5f7bdae0b03380c2ce8
+- name: github.com/Sirupsen/logrus
+  version: 9c060de643590dae45da9d7c26276463bfc46fa0
+- name: github.com/stretchr/testify
+  version: 67106a5111a06241c8d84952c33214675f51a34a
+  subpackages:
+  - assert
+- name: golang.org/x/crypto
+  version: 346896d57731cb5670b36c6178fc5519f3225980
+  subpackages:
+  - curve25519
+  - ssh
+- name: gopkg.in/libgit2/git2go.v23
+  version: 6d3a3499f1639a6272e334f9f74b1e0cf6b0bb49
+testImports: []
